@@ -38,3 +38,14 @@
   box-shadow: 0 0 1em rgba(0, 0, 0, 0.23);
   width: max-content;
 }
+
+.columns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+}
+
+.columns > * {
+  flex-basis: calc(calc(600px - 100%) * 999);
+  flex-grow: 1;
+}
